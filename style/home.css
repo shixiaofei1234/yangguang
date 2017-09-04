@@ -1,0 +1,238 @@
+
+/*导航条 开始*/
+.nav{
+	height: 40px;
+	border-bottom:2px solid #f15c18 ;
+	width: 1440px;
+}
+
+.nav .commodityType{
+	width: 170px;
+	height: 520px;
+	position: absolute;
+	left: 110px;
+	top: 141px;
+	float: left;
+}
+
+.nav .commodityType ul li {
+	width: 170px;
+	height: 48px;
+	text-align: center;
+	line-height: 48px;
+	background: #343a3a url(../image/commodityType_1.jpg) no-repeat center bottom;
+}
+
+.nav .commodityType ul li a{
+	color: #fff;
+}
+
+.nav .commodityType ul li:nth-child(1){
+	width: 170px;
+	height: 40px;
+	background: #f15c18;
+	text-align: center;
+	line-height: 40px;
+}
+
+.nav .cNav{
+	overflow: hidden;
+	width: 320px;
+	height: 40px;
+	margin-left: 280px;
+}
+
+.nav .cNav ul{
+	height: 40px;
+}
+
+.nav .cNav ul li{
+	float: left;
+	height: 40px;
+}
+
+.nav .cNav ul li a{
+	display: block;
+	text-align: center;
+	line-height: 40px;
+	width:80px;
+	height:40px;	
+	font-weight:bold;
+}
+
+.nav .cNav ul li:nth-child(1) a{
+	color: #f15c18;
+}
+
+.nav .cNav ul li a:hover{
+	color: #f15c18;
+}
+
+/*导航条 结束*/
+
+/* 商品展示 开始 */
+.showPiece{
+	height: 80px;
+}
+
+.showPiece .showPiece_one{
+	float: left;
+	width: 410px;
+	height: 67px;
+	border-top: 2px solid #efefef;
+	border-left: 1px solid #efefef;
+	border-right: 1px solid #efefef;
+	border-bottom: 1px solid #efefef;
+	background: url(../image/showPiece_one_1.jpg) no-repeat left center;	
+	margin-top:4px;
+	margin-left: 155px;
+}
+.showPiece .showPiece_one img{
+	background: url(../image/showPiece_one_2.jpg) no-repeat -160px -50px ;
+	margin-left: 135px;
+	margin-top: 4px;
+	float: left;
+}
+.showPiece_one div {	
+    float: left;
+	width: 170px;
+	height: 67;
+	margin-left:5px ;
+	margin-top: 8px;
+}
+/*.news_l ul li a {float:left; width:285px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}*/
+.showPiece_one div a{
+	float: left;
+	font-size: 14px;
+	width: 170px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.showPiece_one div a:hover{
+	color:#f15c18 ;
+}
+
+
+.showPiece .showPiece_two{
+	float: left;
+	width: 370px;
+	height: 67px;
+	border-top: 2px solid #efefef;
+	border-left: 1px solid #efefef;
+	border-right: 1px solid #efefef;
+	border-bottom: 1px solid #efefef;
+	background: url(../image/showPiece_two1.jpg) no-repeat left center;	
+	margin-top:4px;
+	margin-left: 25px;
+}
+
+
+.showPiece_two div {	
+    float: left;
+	width: 170px;
+	height: 67;
+	margin-left:185px ;
+	margin-top: 8px;
+}
+
+.showPiece_two div a{
+	float: left;
+	font-size: 14px;
+	width: 170px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.showPiece .showPieceLast{
+	float: right;
+	width: 160px;
+	height: 80px;
+	position: relative;
+}
+
+.showPiece .showPieceLast img{
+	position: absolute;
+	
+	left: 30px;
+	top: 200px;
+}
+
+
+#showPieceLast2_word p{
+	font-size:10px ;
+}
+/* 商品展示 结束 */
+/*大轮播图部分  开始*/
+  .slideShow{
+  	height: 400px;
+  	
+  }
+  
+  .slideShow .slideShow_main{
+  	width: 786px;
+  	height: 400px;
+  	/*margin-left:280px ;*/
+  	position: relative;
+  	float: left;
+  	
+  }
+  
+  .slideShow .slideShow_left{
+  	width: 280px;
+  	height: 400px;
+  	background: #fff;
+  	float: left;
+  }
+  
+  .slideShow .img-list{
+  	width: 786px;
+  	height: 400px;
+  }
+  
+  .slideShow .img-list li{
+  	position: absolute;
+  	top:0;
+  	left: 0;
+  }
+  
+   .slideShow .banner-nav-list li{
+   	width: 13px;
+   	height: 13px;
+   	border-radius: 50%;
+   	background: #3e3e3e;
+    position: absolute;
+    z-index: 999;
+     top:375px;   
+   }
+   
+   .slideShow .banner-nav-list .active{
+   	  	background: #f15c18;
+   }
+   
+   .slideShow .banner-nav-list li:nth-child(1){
+   	left: 355px;
+   }
+   
+   .slideShow .banner-nav-list li:nth-child(2){
+    left: 370px;
+   }
+   
+   .slideShow .banner-nav-list li:nth-child(3){
+   	left: 385px;
+   }
+   .slideShow .banner-nav-list li:nth-child(4){
+   	left: 400px;
+   }
+   .slideShow .banner-nav-list li:nth-child(5){
+   	left: 415px;
+   }
+   
+   .slideShow .slideShow_center{
+   	width: 250px;
+   	height:400px ;
+   	background:#f3e1e5 url(../image/slideShow5.jpg) no-repeat center center;
+   	float: left;
+   }
+/*大轮播图部分 结束*/
