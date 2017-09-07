@@ -167,6 +167,7 @@
 /*大轮播图部分  开始*/
   .slideShow{
   	height: 400px;
+  	overflow: hidden;
   	
   }
   
@@ -235,4 +236,328 @@
    	background:#f3e1e5 url(../image/slideShow5.jpg) no-repeat center center;
    	float: left;
    }
+   
 /*大轮播图部分 结束*/
+/*几个商品的展示 开始*/
+.advertisement{
+	height: 155px;
+	background:#f2f2f2;
+	padding-top:15px;
+}
+.advertisement_shop{
+	height: 155px;
+	background: #fff;
+}
+
+ .advertisement_shop .left,.advertisement_shop .center_one,.advertisement_shop .center_two,.advertisement_shop .right{
+ 	width: 300px;
+ 	height: 155px;
+ 	background: url(../image/advertisement1.jpg) no-repeat right center;
+ 	float: left;
+ 	position: relative;
+ }
+
+ .advertisement_shop .left .p1,.advertisement_shop .center_one .p1,.advertisement_shop .center_two .p1,.advertisement_shop .right .p1{
+ 	font-size:18px;
+ 	font-weight: bold;
+ 	color:black;
+ 	position: absolute;
+ 	top: 30px;
+ 	left: 10px;
+ 	opacity: .9;
+ }
+ .advertisement_shop .left .p2,.advertisement_shop .center_one .p2,.advertisement_shop .center_two .p2,.advertisement_shop .right .p2{
+ 	font-size:12px ;
+ 	font-weight: bold;
+ 	color: #b6b6b6;
+ 	position: absolute;
+ 	left: 10px;
+ 	top: 50px;
+ }
+.advertisement_shop .left img,.advertisement_shop .center_one img,.advertisement_shop .center_two img,.advertisement_shop .right img{
+ 	position: absolute;
+ 	left: 120px;
+ 	top: 0;
+ }
+
+/*几个商品的展示 结束*/
+
+/* 楼梯 开始 */
+
+/*楼梯左部的悬浮*/
+.stairs_stage .stairs_nav {
+	width: 90px;
+	height: 480px;
+	position: fixed;
+	top: 10%;
+	left: 0;
+	border: 1px solid #999;
+}
+.stairs_nav .stairs_nav_t{
+	width: 90px;
+	height: 156px;
+}
+
+.stairs_nav .stairs_nav_t ul li{
+	padding-top:10px ;
+	width: 85px;
+	height: 32px;
+	border-bottom:1px #888 dashed;
+}
+
+.stairs_nav .stairs_nav_t ul .top{
+	width:90px;
+	height: 15px;
+	border-bottom:none;
+	background: #a3a3a3;
+	line-height: 10px;
+	text-align: center;
+	
+}
+
+.stairs_nav .stairs_nav_t ul li span{
+	color: #5f5f5f;
+	display: block;
+	width: 80px;
+	height: 26px;
+	text-align: right;
+	font-size: 12px;
+	
+}
+
+.stairs_nav .stairs_nav_t ul .last{
+	border-bottom:none;
+}
+.stairs_nav .stairs_nav_t ul li:nth-child(1) span{
+	color: #fff;
+	background: #f15c18 url(../image/spec-brand-1.png) no-repeat 5px center;
+} 
+.stairs_nav .stairs_nav_t ul li:nth-child(2) span{
+	background: url(../image/spec-brand-3.png) no-repeat 5px center;
+} 
+.stairs_nav .stairs_nav_t ul li:nth-child(3) span{
+	background: url(../image/spec-brand-1.png) no-repeat 5px center;
+}
+
+.stairs_nav .stairs_nav_t ul li:nth-child(4) span{
+	background: url(../image/spec-brand-2.png) no-repeat 5px center;
+}
+
+.stairs_nav .stairs_nav_t ul li:nth-child(5) span{
+	background: url(../image/spec-brand-4.png) no-repeat 5px center;
+}
+
+.stairs_nav .stairs_nav_t ul li:nth-child(6) span{
+	background: url(../image/spec-brand-3.png) no-repeat 5px center;
+}
+
+.stairs_nav .stairs_nav_t ul li:nth-child(7) span{
+	background: url(../image/spec-brand-5.png) no-repeat 5px center;
+}
+
+/*楼梯主要部分*/
+.stairs_stage .stairs_stage_header{
+	padding-top:30px ;
+	height: 685px;
+	overflow: hidden;
+	background: #f2f2f2;
+}
+
+.stairs_stage .main .Louti{
+	height: 575px;
+	background: #f2f2f2;
+}
+
+.stairs_stage .stairs_stage_footer{
+	height: 350px;
+	background: #F15C18;
+}
+/*sssssssssssssssssssssss*/
+.chaoyish{
+	height: 500px;
+}
+
+/*品牌特卖*/
+
+.stairs_stage .stairs_stage_header h1{
+  display: block;
+  width: 150px;
+  margin-left:550px ;
+ 
+}
+.stairs_stage .stairs_stage_header dl:nth-child(2),.stairs_stage .stairs_stage_header dl:nth-child(4){
+	float: left;
+}
+.stairs_stage .stairs_stage_header dl:nth-child(3),.stairs_stage .stairs_stage_header dl:nth-child(5){
+	float: right;
+}
+.stairs_stage .stairs_stage_header dl dd{
+	height: 60px;
+	
+}
+.stairs_stage_header dl dd .stairs_stage_header_main{
+	text-align: right;
+   float: right;
+   margin-right: 30px;
+   margin-top:5px ;
+}
+
+.stairs_stage_header dl dd .stairs_stage_heopader_b span{
+	font-size: 18px;
+	color: red;
+}
+
+   
+/*食品酒水*/
+.main .foodBeverage .foodBeverage_t{
+	height: 515px;
+	overflow: hidden;
+}
+.main .foodBeverage .foodBeverage_t .foodBeverage_t_l{
+	float: left;
+	width: 210px;
+}
+ .main .foodBeverage .foodBeverage_t  .foodBeverage_t_l_t{
+	height:35px ;
+	background: url(../image/louti_bg1.jpg) no-repeat left top;
+}
+ .main .foodBeverage .foodBeverage_t  .foodBeverage_t_l_b{
+ 	padding-top:240px ;
+ 	overflow: hidden;
+	background: url(../image/foodBeverage_t1.jpg) no-repeat left top;
+}
+.main .foodBeverage .foodBeverage_t .foodBeverage_t_l_b ul {
+	width: 210px;
+	height: 86px;
+	background-color: #fce8c9;      
+}
+.main .foodBeverage .foodBeverage_t .foodBeverage_t_l_b ul li{
+	width: 100px;
+	height: 43px;
+	text-align: right;
+	line-height: 43px;
+	float: left;
+} 
+.main .foodBeverage .foodBeverage_t .foodBeverage_t_l_b ul li:nth-child(1){
+	background: url(../image/foodBeverage_t_l_b2.png) no-repeat 10px center;
+}
+
+.main .foodBeverage .foodBeverage_t .foodBeverage_t_l_b ul li:nth-child(2){
+	background: url(../image/foodBeverage_t_l_b1.png) no-repeat 10px center;
+}
+.main .foodBeverage .foodBeverage_t .foodBeverage_t_l_b ul li:nth-child(3){
+	background: url(../image/foodBeverage_t_l_b3.png) no-repeat 10px center;
+}
+.main .foodBeverage .foodBeverage_t .foodBeverage_t_l_b ul li:nth-child(4){
+	background: url(../image/foodBeverage_t_l_b4.png) no-repeat 10px center;
+}
+
+.main .foodBeverage .foodBeverage_t .foodBeverage_t_l_b .foodBeverage_t_l_b_b{
+	color: #777777;
+	font-size: 14px;
+	padding-left: 25px;
+	padding-top: 30px;	
+}
+.main .foodBeverage .foodBeverage_t .foodBeverage_t_r{
+	position: relative;
+	float: left;
+}
+.main .foodBeverage .foodBeverage_t .foodBeverage_t_r .list{
+	height: 35px;
+	width:402 ;
+	margin-left: 607px;
+}
+.main .foodBeverage .foodBeverage_t .foodBeverage_t_r a{
+	display: block;
+	width: 80px;
+	height: 35px;
+	float: left;
+	text-align: center;
+	line-height: 35px;
+	color: #333333;
+	background: #fff;
+}
+
+/*鼠标一上去class样式*/
+.main .foodBeverage .foodBeverage_t .foodBeverage_t_r .active{
+	border-top: 2px #fe5621 solid;
+	border-left:1px  #fe5621 solid;
+	border-right:1px #fe5621 solid;
+   /* height: 38px;*/
+}
+/*第一个选项卡样式*/
+.main .foodBeverage .foodBeverage_t .foodBeverage_t_r .content{
+	height: 515px;
+	width: 1010px;
+	display: none;
+	border-top:2px solid #fe5621;
+}
+.main .foodBeverage .foodBeverage_t .foodBeverage_t_r .content .content_div{
+	
+	border-right:3px solid #eeeeee ;
+	float: left;
+}
+
+/*轮播图控制左右的样式*/
+.main .foodBeverage .foodBeverage_t .foodBeverage_t_r .content .left,.main .foodBeverage .foodBeverage_t .foodBeverage_t_r .content .right{
+	width: 30px;
+	height: 60px;
+	background: #bcbcbc;
+	font-size: 36px;
+	position: absolute;
+	color: #fff;
+	text-align: center;
+	line-height: 50px;
+	top: 241px;
+	display: none;
+	cursor: pointer;
+}
+
+.main .foodBeverage .foodBeverage_t .foodBeverage_t_r .content .left{
+	left: 220px;
+}
+.main .foodBeverage .foodBeverage_t .foodBeverage_t_r .content .right{
+	left: 533px;
+}
+
+/*轮播图的小圆点*/
+.main .foodBeverage .foodBeverage_t .foodBeverage_t_r .content span{
+	display: block;
+	width: 10px;
+	height: 10px;
+	border-radius:50% ;
+	background: #3e3e3e;
+	position: absolute;
+	top: 465px;
+	left: 353px;
+}
+
+.main .foodBeverage .foodBeverage_t .foodBeverage_t_r .content .content_cicle span:nth-child(2){
+	left:368px ;
+}
+.main .foodBeverage .foodBeverage_t .foodBeverage_t_r .content .content_cicle span:nth-child(3){
+	left:383px ;
+}
+.main .foodBeverage .foodBeverage_t .foodBeverage_t_r .content .content_cicle span:nth-child(4){
+	left:398px ;
+}
+
+.main .foodBeverage .foodBeverage_t .foodBeverage_t_r .content .content_cicle .content_active{
+	background: #f15c18;
+}
+.main .foodBeverage .foodBeverage_t .foodBeverage_t_r .content .content_carousel{
+	width: 339px;
+	overflow: hidden;
+}
+
+.main .foodBeverage .foodBeverage_t .foodBeverage_t_r .content .content_carousel ul li{
+	width: 339px;
+	float: left;
+}
+.main .foodBeverage .foodBeverage_t .foodBeverage_t_r .content .content_carousel ul {
+	width:1356px ;
+}
+/*轮播图 样式*/
+
+
+/* 楼梯 结束  */

@@ -122,4 +122,192 @@ function showImg(){
   	 	slideShowAutoPlay();
   	 })
   
+      //几个商品展示的移入移出事件 
+      $("#advertisement_shop_left").mouseenter(function(){
+      	 $(this).find("img").animate({"left":140},500)
+      	 $(this).find(".p1").animate({"top":50,"opacity":1},500);
+      	 $(this).find(".p2").animate({"top":70,"opacity":1},500).css("color","red");
       
+      	 
+      })
+      
+     $("#advertisement_shop_left").mouseleave(function(){
+      	 $(this).find("img").animate({"left":120},500)
+      	 $(this).find(".p1").animate({"top":30,"opacity":0.9},500);
+      	 $(this).find(".p2").animate({"top":50,"opacity":1},500).css("color","#b6b6b6");
+      	 
+      })
+     
+     
+      $("#advertisement_shop_center_one").mouseenter(function(){
+      	 $(this).find("img").animate({"left":140},500)
+      	 $(this).find(".p1").animate({"top":50,"opacity":1},500);
+      	 $(this).find(".p2").animate({"top":70,"opacity":1},500).css("color","red");
+      
+      	 
+      })
+      
+     $("#advertisement_shop_center_one").mouseleave(function(){
+      	 $(this).find("img").animate({"left":120},500)
+      	 $(this).find(".p1").animate({"top":30,"opacity":0.9},500);
+      	 $(this).find(".p2").animate({"top":50,"opacity":1},500).css("color","#b6b6b6");
+      	 
+      })
+
+
+     $("#advertisement_shop_center_two").mouseenter(function(){
+      	 $(this).find("img").animate({"left":140},500)
+      	 $(this).find(".p1").animate({"top":50,"opacity":1},500);
+      	 $(this).find(".p2").animate({"top":70,"opacity":1},500).css("color","red");
+      
+      	 
+      })
+      
+     $("#advertisement_shop_center_two").mouseleave(function(){
+      	 $(this).find("img").animate({"left":120},500)
+      	 $(this).find(".p1").animate({"top":30,"opacity":0.9},500);
+      	 $(this).find(".p2").animate({"top":50,"opacity":1},500).css("color","#b6b6b6");
+      	 
+      })
+     
+
+    $("#advertisement_shop_right").mouseenter(function(){
+      	 $(this).find("img").animate({"left":140},500)
+      	 $(this).find(".p1").animate({"top":50,"opacity":1},500);
+      	 $(this).find(".p2").animate({"top":70,"opacity":1},500).css("color","red");
+      
+      	 
+      })
+      
+     $("#advertisement_shop_right").mouseleave(function(){
+      	 $(this).find("img").animate({"left":120},500)
+      	 $(this).find(".p1").animate({"top":30,"opacity":0.9},500);
+      	 $(this).find(".p2").animate({"top":50,"opacity":1},500).css("color","#b6b6b6");
+      	 
+      })
+     
+//楼梯悬浮侧 鼠标移入变色
+$(".stairs_nav_t").find("span").mouseenter(function(){
+	$(this).css("background-color","#f15c18");
+})
+$(".stairs_nav_t").find("span").mouseleave(function(){
+	$(this).css("background-color","#fff");
+})
+$(".stairs_nav_t").find("span").eq(0).mouseleave(function(){
+	$(this).css("background-color","#f15c18");
+})
+
+//楼梯部分的js代码
+
+$(window).scroll(function(){
+	sTop = $(document).scrollTop();
+	//console.log(sTop);
+	// console.log( $(".stairs_stage .header").offset().top ) 
+	if(sTop > $(".stairs_stage .stairs_stage_header").offset().top ){//控制左侧悬浮显示与消失
+		$(".stairs_nav").css("display","block");
+		
+	}else{
+		$(".stairs_nav").css("display","none");
+	}
+	
+	for(var i = 0 ; i<$(".Louti").size(); i++){//楼梯效果代码
+		if( Math.abs( $(".Louti").eq(i).offset().top - sTop )< $(".Louti").eq(i).height()/2   ){
+			$(".stairs_nav_t ul li span").eq(i).css("background-color","#f15c18");
+		}else{
+			if(i){				
+     			$(".stairs_nav_t ul li span").eq(i).css("background-color","#fff");
+			}
+		}
+	}
+	
+})
+
+//点击左侧楼梯的页面移动效果
+
+$(".stairs_nav_t li:not('.top')").click(function(){
+    var index = $(this).index();
+	$("html,body").animate({"scrollTop":$(".Louti").eq(index).offset().top},1000)
+})
+
+//点击top回到顶部
+
+$(".top").click(function(){
+	$("html,body").animate({"scrollTop":0},1000)
+})
+
+
+//移到品牌各个dl下改变其透明度
+$(".stairs_stage_header dl").mouseenter(function(){
+	$(this).css("opacity","0.6")
+})
+$(".stairs_stage_header dl").mouseleave(function(){
+	$(this).css("opacity","1")
+})
+
+//食品酒水选项卡
+$(".foodBeverage_t_r .list").find("a").mouseenter(function(){
+	$(this).addClass("active").siblings().removeClass("active");
+	index = $(this).index();
+    $(".foodBeverage_t_r .content").css("display","none");
+    
+     $(".foodBeverage_t_r .content").eq(index).css("display","block")
+})
+
+
+//食品酒水里面的轮播图
+         var flag = true;
+         var index = 0;
+		 function autoPlay(){
+		 	index++;
+		 	if(index==4){
+		 		index = 0;
+		 	}
+	 	     $(".content_carousel ul").animate({"margin-left":-339},1000,function(){
+	 	    	 $(".content_carousel ul").css("margin-left",0);
+	 		     $(".content_carousel ul").append($(".content_carousel ul li").eq(0));
+	 		     flag = true;
+	 	    })
+	 	    $(".content_cicle span").eq(index).addClass("content_active").siblings().removeClass("content_active"); 
+	 	    
+	 }
+    timer1 = setInterval(autoPlay,1500);
+     
+     $(".content_carousel").mouseover(function(){
+     	clearInterval(timer1);
+     	$(".left,.right").show();
+     })
+     
+     $(".content_carousel").mouseout(function(){
+     	timer1 = setInterval(autoPlay,1500);
+     	$(".left,.right").hide();
+     })
+	 
+	 $(".left").click(function(){
+	 	if(flag){
+	 		flag = false;
+	  	 autoPlay();
+	 		
+	 	}
+	 })
+	 
+	 
+	 $(".right").click(function(){
+	 	index--
+	 	if(index==0){
+	 		index = 4; 
+	 	}
+	 	 $(".content_cicle span").eq(index).addClass("content_active").siblings().removeClass("content_active"); 
+	 	if(flag){
+	 		flag = false;	
+		 	$(".content_carousel ul").prepend( $("li:last") );
+		 	$(".content_carousel ul").css("margin-left",-339);
+		 	$(".content_carousel ul").animate({"margin-left":0},1000,function(){
+		 		flag = true;
+		 	})
+	 	}
+	 })
+
+	
+
+
+
