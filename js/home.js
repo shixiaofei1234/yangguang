@@ -270,7 +270,7 @@ $(".foodBeverage_t_r .list").find("a").mouseenter(function(){
 	 	    $(".content_cicle span").eq(index).addClass("content_active").siblings().removeClass("content_active"); 
 	 	    
 	 }
-    timer1 = setInterval(autoPlay,1500);
+    timer1 = setInterval(autoPlay,4000);
      
      $(".content_carousel").mouseover(function(){
      	clearInterval(timer1);
@@ -278,7 +278,7 @@ $(".foodBeverage_t_r .list").find("a").mouseenter(function(){
      })
      
      $(".content_carousel").mouseout(function(){
-     	timer1 = setInterval(autoPlay,1500);
+     	timer1 = setInterval(autoPlay,3000);
      	$(".left,.right").hide();
      })
 	 
@@ -307,7 +307,286 @@ $(".foodBeverage_t_r .list").find("a").mouseenter(function(){
 	 	}
 	 })
 
+	//第一个楼梯鼠标移上去改变透明度
+	$(".content_div2").mouseleave(function(){
+		$(this).find("div").css("opacity",1)
+	})
 	
+	$(".content_div2 div").mouseenter(function(){
+		$(this).css("opacity",1).siblings().css("opacity",.4);
+	})
+
+
+
+//家用家具
+
+//移入a标签 改变样式
+$(".householdAppliances_t_r .list").find("a").mouseenter(function(){
+	$(this).addClass("active").siblings().removeClass("active");
+	index = $(this).index();
+    $(".householdAppliances_t_r .content").css("display","none");
+    
+     $(".householdAppliances_t_r .content").eq(index).css("display","block")
+})
+
+
+//家用家具 的轮播图
+
+ var flag1 = true;
+         var index1 = 0;
+		 function setautoPlay(){
+		 	index1++;
+		 	if(index1==4){
+		 		index1 = 0;
+		 	}
+	 	     $(".content_carousel1 ul").animate({"margin-left":-339},1000,function(){
+	 	    	 $(".content_carousel1 ul").css("margin-left",0);
+	 		     $(".content_carousel1 ul").append($(".content_carousel1 ul li").eq(0));
+	 		     flag1 = true;
+	 	    })
+	 	    $(".content_cicle1 span").eq(index1).addClass("content_active1").siblings().removeClass("content_active1"); 
+	 	    
+	 }
+    utimer = setInterval(setautoPlay,3000);
+     
+     $(".content_carousel1").mouseover(function(){
+     	clearInterval(utimer);
+     	$(".left_two,.right_two").show();
+     })
+     
+     $(".content_carousel1").mouseout(function(){
+     	utimer = setInterval(setautoPlay,3000);
+     	$(".left_two,.right_two").hide();
+     })
+	 
+	 $(".left_two").click(function(){  
+	 	if(flag1){
+	 		flag1 = false;
+	  	 setautoPlay();
+	 		
+	 	}
+	 })
+	 
+	 
+	 $(".right_two").click(function(){
+	 	index1--
+	 	if(index1==0){  
+	 		index1 = 4; 
+	 	}
+	 	 $(".content_cicle1 span").eq(index1).addClass("content_active1").siblings().removeClass("content_active1"); 
+	 	if(flag1){
+	 		flag1 = false;	
+		 	$(".content_carousel1 ul").prepend( $("li:last") );
+		 	$(".content_carousel1 ul").css("margin-left",-339);
+		 	$(".content_carousel1 ul").animate({"margin-left":0},1000,function(){
+		 		flag1 = true;
+		 	})
+	 	}
+	 })
+	 
+/*珠宝 收藏*/
+
+//移入a标签 改变样式
+$(".jewelrycollection_t_r .list").find("a").mouseenter(function(){
+	$(this).addClass("active").siblings().removeClass("active");
+	index = $(this).index();
+    $(".jewelrycollection_t_r .content").css("display","none");
+    
+     $(".jewelrycollection_t_r .content").eq(index).css("display","block")
+})
+
+
+//珠宝收藏  的轮播图
+
+ var flag2 = true;
+         var index2 = 0;
+		 function setautoPlay_two(){
+		 	index2++;
+		 	if(index2==4){
+		 		index2 = 0;
+		 	}
+	 	     $(".content_carousel2 ul").animate({"margin-left":-339},1000,function(){
+	 	    	 $(".content_carousel2 ul").css("margin-left",0);
+	 		     $(".content_carousel2 ul").append($(".content_carousel2 ul li").eq(0));
+	 		     flag2 = true;
+	 	    })
+	 	    $(".content_cicle2 span").eq(index2).addClass("content_active2").siblings().removeClass("content_active2"); 
+	 	    
+	 }
+    wtimer = setInterval(setautoPlay_two,3000);
+     
+     $(".content_carousel2").mouseover(function(){
+     	clearInterval(wtimer);
+     	$(".left_three,.right_three").show();
+     })
+     
+     $(".content_carousel2").mouseout(function(){
+     	wtimer = setInterval(setautoPlay_two,3000);
+     	$(".left_three,.right_three").hide();
+     })
+	 
+	 $(".left_three").click(function(){  
+	 	if(flag2){
+	 		flag2 = false;
+	  	   setautoPlay_two();		
+	 	}
+	 })
+	 
+	 
+	 $(".right_three").click(function(){
+	 	index2--
+	 	if(index2==0){  
+	 		index2 = 4; 
+	 	}
+	 	 $(".content_cicle2 span").eq(index2).addClass("content_active2").siblings().removeClass("content_active2"); 
+	 	if(flag2){
+	 		flag2 = false;	
+		 	$(".content_carousel2 ul").prepend( $("li:last") );
+		 	$(".content_carousel2 ul").css("margin-left",-339);
+		 	$(".content_carousel2 ul").animate({"margin-left":0},1000,function(){
+		 		flag2 = true;
+		 	})
+	 	}
+	 })
+	 
+/*个户美妆*/
+
+
+$(".beautymakeup_t_r .list").find("a").mouseenter(function(){
+	$(this).addClass("active").siblings().removeClass("active");
+	index = $(this).index();
+    $(".beautymakeup_t_r .content").css("display","none");
+    
+     $(".beautymakeup_t_r .content").eq(index).css("display","block")
+})
+
+
+//个户美妆  的轮播图
+
+ var flag3 = true;
+         var index3 = 0;
+		 function setautoPlay_three(){
+		 	index3++;
+		 	if(index3==4){
+		 		index3 = 0;
+		 	}
+	 	     $(".content_carousel3 ul").animate({"margin-left":-339},1000,function(){
+	 	    	 $(".content_carousel3 ul").css("margin-left",0);
+	 		     $(".content_carousel3 ul").append($(".content_carousel3 ul li").eq(0));
+	 		     flag3 = true;
+	 	    })
+	 	    $(".content_cicle3 span").eq(index3).addClass("content_active3").siblings().removeClass("content_active3"); 
+	 	    
+	 }
+    stimer = setInterval(setautoPlay_three,4000);
+     
+     $(".content_carousel3").mouseover(function(){
+     	clearInterval(stimer);
+     	$(".left_four,.right_four").show();
+     })
+     
+     $(".content_carousel3").mouseout(function(){
+     	stimer = setInterval(setautoPlay_three,4000);
+     	$(".left_four,.right_four").hide();
+     })
+	 
+	 $(".left_four").click(function(){  
+	 	if(flag3){
+	 		flag3 = false;
+	  	   setautoPlay_three();		
+	 	}
+	 })
+	 
+	 
+	 $(".right_four").click(function(){
+	 	index3--
+	 	if(index3==0){  
+	 		index3 = 4; 
+	 	}
+	 	 $(".content_cicle3 span").eq(index3).addClass("content_active3").siblings().removeClass("content_active3"); 
+	 	if(flag3){
+	 		flag3 = false;	
+		 	$(".content_carousel3 ul").prepend( $("li:last") );
+		 	$(".content_carousel3 ul").css("margin-left",-339);
+		 	$(".content_carousel3 ul").animate({"margin-left":0},1000,function(){
+		 		flag3 = true;
+		 	})
+	 	}
+	 })
+	 
+//服装配饰
+
+$(".garmentaccessory_t_r .list").find("a").mouseenter(function(){
+	$(this).addClass("active").siblings().removeClass("active");
+	index = $(this).index();
+    $(".garmentaccessory_t_r .content").css("display","none");
+    
+     $(".garmentaccessory_t_r .content").eq(index).css("display","block")
+})
+
+
+//个户美妆  的轮播图
+
+ var flag4 = true;
+         var index4 = 0;
+		 function setautoPlay_four(){
+		 	index4++;
+		 	if(index4==4){
+		 		index4 = 0;
+		 	}
+	 	     $(".content_carousel4 ul").animate({"margin-left":-339},1000,function(){
+	 	    	 $(".content_carousel4 ul").css("margin-left",0);
+	 		     $(".content_carousel4 ul").append($(".content_carousel4 ul li").eq(0));
+	 		     flag4 = true;
+	 	    })
+	 	    $(".content_cicle4 span").eq(index4).addClass("content_active4").siblings().removeClass("content_active4"); 
+	 	    
+	 }
+    dtimer = setInterval(setautoPlay_four,4000);
+     
+     $(".content_carousel4").mouseover(function(){
+     	clearInterval(dtimer);
+     	$(".left_five,.right_five").show();
+     })
+     
+     $(".content_carousel4").mouseout(function(){
+     	dtimer = setInterval(setautoPlay_four,4000);
+     	$(".left_five,.right_five").hide();
+     })
+	 
+	 $(".left_five").click(function(){  
+	 	if(flag4){
+	 		flag4 = false;
+	  	   setautoPlay_four();		
+	 	}
+	 })
+	 
+	 
+	 $(".right_five").click(function(){
+	 	index4--
+	 	if(index4==0){  
+	 		index4 = 4; 
+	 	}
+	 	 $(".content_cicle4 span").eq(index4).addClass("content_active4").siblings().removeClass("content_active4"); 
+	 	if(flag4){
+	 		flag4 = false;	
+		 	$(".content_carousel4 ul").prepend( $("li:last") );
+		 	$(".content_carousel4 ul").css("margin-left",-339);
+		 	$(".content_carousel4 ul").animate({"margin-left":0},1000,function(){
+		 		flag4 = true;
+		 	})
+	 	}
+	 })
+
+
+
+
+
+
+
+
+
+
 
 
 
