@@ -3,7 +3,157 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
+		<link rel="stylesheet" type="text/css" href="../style/login.css"/>
+		<link rel="stylesheet" type="text/css" href="../style/footer.css"/>
+		<script src="../js/jquery-1.11.1.js"></script>
+		<script src="../js/cookie.js"></script>
 	</head>
 	<body>
+		<div class="login_header">
+			<div class="layout login_worp">
+				<h1 class="side_login">
+					<a href="#"><img src="../image/login/1.png" /></a>
+					
+				</h1>
+				<div class="login_header_right">
+					<span class="avatar"><img src="../image/login/avatar.gif"></span>
+					<span>
+						你好,欢迎来到央广购物<br/>
+						已注册的会员请登录,或立即<a href="register.html" class="register">注册新会员</a>
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="login_main">
+			<div class="left_picture">
+				<img src="../image/login/2.jpg"/>
+			</div>
+			<div class="right_nc">
+				<div class="arrow"></div>	
+				<ul class="tab_nav">
+					<li><a href="#" class="tablogin_active tab_nav_login_common">用户登录<i></i></a></li>
+					<li><a href="#" class="tab_nav_login_phone">手机动态码登录<i></i></a></li>
+				</ul>
+				<div class="tab_constainer">
+					<div class="commonModule" style="display:block;">
+						<form class="nc_login_form">
+							<dl>
+								<dt>账&nbsp;&nbsp;&nbsp;号:</dt>
+								<dd><input type="text" placeholder="手机号/会员名/邮箱" class="text" id="photoName"></dd>
+								<div class="phone_error">
+										<div class="phone_error_s">!</div>
+											
+								</div>	
+							</dl>
+							<dl>
+								<dt>密&nbsp;&nbsp;&nbsp;码:</dt>
+								<dd><input type="text" placeholder="输入账户密码" class="text" id="pwd"> </dd>
+								<div class="phone_error">
+										<div class="phone_error_s">!</div>
+											
+								</div>	
+							</dl>
+							<div class="verificationcode">			
+								<dl>
+									<dt>验证码:</dt>
+									<dd><input type="text" placeholder="输入验证码" class="text" id="verificationcode"> </dd>
+									<div class="phone_error">
+										<div class="phone_error_s">!</div>
+										
+									</div>	
+								</dl>
+								<span id="verificationcode_s">
+									sjhd
+								</span>	
+								<div class="verificationcode_d">
+									看不清,换一张
+								</div>	
+							</div>
+							<div class="handle_div">
+								<span class="auto">
+								   <input type="checkbox" value="1" class="checkbox">七天自动登录
+								</span>
+								<a href="#" class="forget">忘记密码</a>
+							</div>	
+							<div class="submit_div">
+								<input type="button" value="登录" class="submit" id="login">
+							</div>
+						</form>
+					</div>
+					<div class="mobieleLogin" style="display: none;">
+						<form class="phone_login">
+							<dl>
+								<dt>手机号</dt>
+								<dd><input type="text" placeholder="可填写已注册的手机号接收短信" class="text"> </dd>
+							</dl>
+							<div class="verificationcode_two">			
+								<dl>
+									<dt>验证码:</dt>
+									<dd><input type="text" placeholder="输入验证码" class="text"> </dd>
+								</dl>
+								<span></span>	
+							</div>
+							<div class="tipContent">
+								正确输入上方验证码后,点击<a href="#">发送短信动态码</a>，查看短信将系统发送的“6位短信动态码”输入到下方验证后登录。
+							</div>
+							<dl>
+								<dt>动态码</dt>
+								<dd><input type="text" placeholder="输入六位手机动态码" class="text"> </dd>
+							</dl>
+						</form>
+					</div>
+				</div>
+				<div class="nc_login_weixin">
+					<h4>使用合作网站账号登录:</h4>
+					<a href="#"><i></i>维信</a>	
+					
+				</div>
+			</div>
+			
+		</div>
+		<div class="footer">
+			<div class="layout">
+				<p>
+					<a href="#">首页</a> |
+					<a href="#">招商合作</a> |
+					<a href="#">关于央广购物</a> |
+					<a href="#">联系我们</a> |
+					<a href="#">成为供应商</a> |
+					<a href="#">招贤纳士</a>		
+				</p>
+				<p>
+					<i></i>
+					京公网安备:11011502002190&nbsp;&nbsp;
+					<a href="#">京ICP备10038858号</a>&nbsp;&nbsp;
+					<a href="#">食品流通许可证编号:SP1101151210063489</a>&nbsp;&nbsp;
+					<a href="#">信息网络传播视听 0102002号</a>
+				</p>
+				<p>
+					Copyright<em style="font-family: Arial,verdana;margin: 0 4px;">©</em>
+					2010-2017 cnrmall.com All Rights Reserved&nbsp;&nbsp;服务热线：4008-518-518
+				</p>
+				<ul class="footer-img">
+					<li><a href="" class="img0"></a></li>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+				</ul>
+			</div>
+		</div>
 	</body>
 </html>
+<script src="../js/login.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

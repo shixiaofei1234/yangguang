@@ -1,0 +1,176 @@
+html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img {margin:0; padding:0;}
+
+fieldset,img {border:none;}
+img {display:block;}
+address,caption,cite,code,dfn,th,var { font-style:normal; font-weight:normal;}
+ul,ol {list-style:none;} 
+
+body {color:#333; padding:5px 0; font:14px/24px "微软雅黑","宋体","Arial Narrow",HELVETICA; background:#fff;/* overflow-y:scroll;*/ overflow-x:hidden;}
+a {color:#333; text-decoration:none;}
+a:hover {color:#333;}
+.layout {width:1220px; margin:0 auto; overflow:hidden;}
+
+/*头部开始*/
+.public_layout{
+	background-color: #f6f6f6;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.index_top{
+	width: 1200px;
+	margin: 0 auto;
+	height: 39px;
+}
+
+.index_top .new_home{
+	float: right;
+	line-height: 39px;
+    font-size: 12px;
+    font-family: "宋体";
+    color: #777777;
+}
+.index_top .new_home i{
+	float: left;
+	margin-top:10px ;
+	margin-right:5px ;
+}
+
+.index_top .menu{
+	font-family: "宋体";
+    display: inline-block;
+    height: 39px;
+    vertical-align: top;
+    font-size: 0;
+}
+
+.index_top .menu dl{
+	vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    display: inline-block;
+    height: 12px;
+    margin: 14px 0 13px 0;
+    position: relative;
+    z-index: 999;
+    border-left: solid 1px #E1E1E1;
+}
+
+.index_top .menu dl dt{
+	font-size: 12px;
+    line-height: 20px;
+    height: 20px;
+    padding: 10px 9px 9px 9px;
+    margin: -14px 3px 0 3px;
+    border: none;
+}
+
+.index_top .menu dl .my_order{
+    font-size: 12px;
+    font-family: "宋体";
+    color: #777777;
+}
+
+.index_top_right{
+	float: right;
+}
+.index_top .login{
+	font-family: "宋体";
+    display: inline-block;
+    height: 20px;
+    vertical-align: top;
+    line-height: 20px;
+    padding: 10px 0 9px 0;
+}
+.index_top .login a{
+	color: #555;
+    line-height: 20px;
+    margin: 0 5px 0 0;
+}
+
+.index_top .menu dl dt .arrow{
+	background: url(../image/index/top_bg.png) no-repeat 0 0;
+	display: inline-block;
+	width: 6px;
+	height: 3px;
+	margin-left: 6px;
+	transition: all .2s;
+}
+
+.index_top .menu dl:hover dt{
+	position: relative;
+	z-index: 2;
+	background: #fff;
+	border: 1px solid #d6d6d6;
+	border-width: 1px 1px 0 1px;
+	padding:5px 9px 6px 9px;
+	margin: -10px 2px 0 2px;
+}
+
+.index_top .menu dl:hover dt span{
+	transform: rotate(180deg);
+}
+
+
+.index_top .menu dl dd{
+     font-family: 宋体;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    top: 0px;
+    left: 2px;
+    height: 0px;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-image: initial;
+    transition: 0.2s ease-out;
+}
+
+.index_top .menu dl dd ul{
+	margin: 0;
+}
+
+.index_top .menu dl dd ul li a{
+	font-size: 12px;
+    line-height: 24px;
+    display: block;
+    clear: both;
+    padding: 2px 0 2px 11px;
+}
+
+.index_top .menu dl:hover dd{
+	top: 21px;
+	opacity: 1;
+	min-height: 78px;
+	overflow: visible;
+	height: auto;
+} 
+/*头部结束*/
+
+
+/*头部搜索 开始*/
+.headSearch{
+	height: 100px;
+	background: url(../image/headSearch_1.png) no-repeat left center, url(../image/headSearch3.jpg) no-repeat right center;
+	line-height: 100px;
+}
+
+.headSearch div{
+	width: 95px;
+	height: 42px;
+	background: #ea0011 url(../image/headSearch_2.jpg) no-repeat center center;
+	margin-right:329px ;
+	margin-top: 30px;
+	float: right;
+}
+
+.headSearch input{
+	width: 365px;
+	height: 34px;
+	border: 3px solid #e90015;
+	margin-left:345px;
+}
+
+/*头部搜索 结束*/

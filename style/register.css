@@ -1,0 +1,233 @@
+html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img {margin:0; padding:0;}
+
+fieldset,img {border:none;}
+img {display:block;}
+address,caption,cite,code,dfn,th,var { font-style:normal; font-weight:normal;}
+ul,ol {list-style:none;} 
+
+body {color:#333; padding:5px 0; font:14px/24px "微软雅黑","宋体","Arial Narrow",HELVETICA; background:#fff;/* overflow-y:scroll;*/ overflow-x:hidden;}
+a {color:#333; text-decoration:none;}
+a:hover {color:#333;}
+.layout {width:1000px; margin:0 auto; overflow:hidden;}
+
+.register_header{
+	height: 80px;
+	border-bottom:1px #eee solid ;
+	background: #fff;
+}
+.register_header .register_header_l{
+	width: 240px;
+	height: 68px;
+	float: left;
+	padding: 10px 0 0 0;
+}
+
+
+.register_header img{
+	vertical-align: middle;
+} 
+
+   .register_header .register_header_r{
+   	float: right;
+   	height: 24px;
+   	line-height: 24px;
+   	margin-top: 50px;
+   	font-size: 14px;
+   	color: #aaa;
+   } 
+   .register_header .register_header_r a{
+   	 float: right;
+   	 font-weight: 600;
+   	 font-family: "微软雅黑";
+   	 margin-left: 4px;
+   	 color: #06c;
+   }
+
+.main_bg{
+	width: 100%;
+	height: 680px;
+	background: url(../image/register/register_bg.png);
+	padding-top: 60px;
+	
+}
+
+.register_box{
+	width: 860px;
+	height: 560px;
+	margin: 0 auto;
+	background: #fff;
+	border: 10px solid rgba(0,0,0,0.15);;
+}
+
+.register_box .register_box_left{
+	width: 600px;
+	height: 520px;
+	
+	margin-top:10px ;
+	margin-left: 10px;
+	float: left;
+}
+.register_box .register_box_right{
+	width: 200px;
+	height: 500px;
+	margin-top:10px ;
+	float: left;
+	
+	border-left:1px solid #e6e6e6;
+}
+
+.register_box .register_box_left .nav{
+	width: 580px;
+	height: 40px;
+	border-bottom:1px solid #e6e6e6;
+	color: #aaa;
+	font-size: 18px;
+	font-family: "微软雅黑";
+}
+.register_box .register_box_left .nav li{
+	width: 290px;
+	height: 40px;
+	text-align: center;
+}
+
+
+.register_box .register_box_left .phoneRegister .register_form{
+	display: block;
+	margin: 50px 100px;
+}
+
+
+.register_box .register_box_left .phoneRegister .register_form dl{
+	width: 348px;
+	background-color: #fff;
+	height: 52px;
+	margin-top: -1px;
+	border: 1px solid #e6e6e6;
+	position: relative;
+	z-index: 1;
+}
+
+.register_box .register_box_left .phoneRegister .register_form dl dt{
+	font-size: 14px;
+	line-height: 20px;
+	color: #666;
+	width: 88px;
+	padding: 16px 0px 16px 20px;
+	float: left;
+}
+
+.register_box .register_box_left .phoneRegister .register_form dl dd{
+	height: 28px;
+	float: left;
+	padding: 12px 0;
+}
+
+
+.register_box .register_box_left .phoneRegister .register_form dl dd .text{
+	outline: none;
+	width: 240px;
+	font-size: 14px;
+	line-height: 28px;
+	height: 28px;
+	padding: 0;
+	border: none;
+}
+
+
+.register_box .register_box_left .phoneRegister .register_form .verificationcode_three{
+	height: 54px;
+	width: 100%;
+}
+
+.register_box .register_box_left .phoneRegister .register_form .verificationcode_three dl{
+	width: 228px;
+	float: left;
+}
+.register_box .register_box_left .phoneRegister .register_form .verificationcode_three span{
+	width: 119px;
+	height: 52px;
+	float: left;
+	margin: -1px 0 0 -1px;
+	border: solid 1px #e6e6e6;
+	position: relative;
+	z-index: 1;
+	
+}
+.register_box .register_box_left .phoneRegister .register_form .verificationcode_three dl dd input{
+	outline: none;
+	width: 100px;
+}
+
+.register_box .register_box_left .phoneRegister .register_form .deal{
+	border: none;
+	width: 400px;
+	height: 30px;
+	margin-top: 15px;
+	line-height: 30px;
+	font-size: 14px;
+	color: #666;
+}
+.register_box .register_box_left .phoneRegister .register_form .deal dd{
+	height: 28px;
+	float: left;
+}
+
+.register_box .register_box_left .phoneRegister .register_form .deal dd .checkbox{
+	vertical-align: middle;
+	margin-right: 8px;
+}
+.register_box .register_box_left .phoneRegister .register_form .deal dd a{
+	color: #0066CC;
+}
+.register_box .register_box_left .phoneRegister .register_form .submit_div{
+	margin-top: 15px;
+}
+
+.register_box .register_box_left .phoneRegister .register_form .submit_div .submit{
+
+    font-family: "microsoft yahei";
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFF;
+    background-color: #FF500B;
+    width: 398px;
+    height: 42px;
+    border: solid 1px #F15C18;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.register_box_right{
+	background: url(../image/register/2.png) no-repeat;
+	background-position-x: 10px;
+	background-position-y:10px
+}
+
+.phone_error{
+	color: #000;
+    line-height: 24px;
+    background: #FFF5D9 no-repeat 0 0;
+    text-align: left;
+    white-space: nowrap;
+    height: 24px;
+    padding: 8px 12px 8px 24px;
+    position: absolute;
+    z-index: 2;
+    top: 5px;
+    left: 300px;
+    display: none;
+}
+.phone_error .phone_error_s{
+	float: left;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	border-radius: 50%;
+	background: #FF500B;
+	color: #fff;
+	margin-left: -20px;
+	margin-top: 2px;
+	margin-right: 5px;
+	font-size: 20px;
+}
