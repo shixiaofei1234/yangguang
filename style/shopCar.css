@@ -423,6 +423,7 @@ a:hover {color:#333;}
     border-radius: 3px 0 0 3px;
     background-color: #FAFAFA;
     line-height: 24px;
+    cursor: not-allowed;
 }
 
 .quantity .goods_text{
@@ -450,6 +451,7 @@ a:hover {color:#333;}
     border-radius: 0 3px 3px 0;
     background-color: #FAFAFA;
     line-height: 24px;
+    cursor: pointer;
 }
 
 .goods_price{

@@ -131,7 +131,7 @@ $(function(){
 	 				arr=cookieInfo;
 	                for(var i in arr ){
 	                	if(_json.id == arr[i].id && _json.name == arr[i].name){
-							arr[i].count = arr[i].count + _json.count;
+							arr[i].count = parseInt(arr[i].count)  + parseInt(_json.count);
 							flag = false;
 							break;
 						}
@@ -141,9 +141,43 @@ $(function(){
 	 				arr.push(_json)
 	 			}
 	 			setCookie("shoplist",JSON.stringify(arr));
+		 		var f = confirm("是否继续购买?确定--继续购买，取消---去购物车结算");
+					if( !f ){
+						location.href = "shopCar.html";
+					}
 
 	 		})
 	 		/*加入购物车结束*/
+	 		/*数量的加减运算 开始*/
+	 		 check();
+	 		function check(){
+	 			if(parseInt( $(".input_count").val())==1){
+	 				$(".add").css({"cursor":"not-allowed","color":"#E1E1E1"});
+	 			}else{
+	 				$(".add").css({"cursor":"pointer","color":"#111111"});
+	 			}
+	 		}
+	 		
+	 		$(".subtract").click(function(){
+	 			//alert($(".input_count").val())
+	 	        count =  parseInt( $(".input_count").val()) +1;
+	 	        $(".input_count").val(count);
+	 	         check();
+	 		})
+	 		
+	 		$(".add").click(function(){
+	 			//alert($(".input_count").val())
+	 	        count =  parseInt( $(".input_count").val()) -1;
+	 	        $(".input_count").val(count);
+	 	        
+	 	        if(count <= 1){
+	 	        	 $(".input_count").val(1);
+	 	        }
+	 	         check();
+	 		})
+	 		
+	 		
+	 		/*数量的加减运算 结束*/
 	 		
 	 	}
 	 })	
